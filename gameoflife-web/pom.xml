@@ -194,12 +194,13 @@
 		    <plugin>
                        <groupId>com.spotify</groupId>
                        <artifactId>docker-maven-plugin</artifactId>
+		       <version>0.4.0</version>
                        <configuration>
 			  <serverId>localnexus</serverId>
 			  <username>testuser</username>
 			  <password>S3lvation300</password>
 			  <pushImage>true</pushImage>
-                          <pushImage>${docker.image.name}</pushImage>
+                          <pushImage>${docker.registry}/teal/{docker.image.name}</pushImage>
                        </configuration>
                     </plugin>
                  </plugins>
