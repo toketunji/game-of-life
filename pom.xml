@@ -27,11 +27,11 @@
         <url>scm:git:git@github.com:${github.account}/game-of-life.git</url>
     </scm>
     <repositories>
-    <repository>
-      <id>localnexus</id>
-      <name>Snapshots</name>
-      <url>https://40.113.144.171:8081/repository/snapshots</url>
-    </repository>
+      <repository>
+        <id>localnexus</id>
+        <name>Snapshots</name>
+        <url>https://40.113.144.171:8081/repository/snapshots</url>
+      </repository>
     <repository>
       <snapshots>
         <enabled>true</enabled>
@@ -42,7 +42,6 @@
       <url>https://40.113.144.171:8081/repository/releases</url>
     </repository>
   </repositories>
-
   <distributionManagement>
     <snapshotRepository>
       <id>localnexus</id>
@@ -56,7 +55,7 @@
       <name>Releases</name>
       <url>https://40.113.144.171:8081/repository/releases</url>
     </repository>
-  </distributionManagement
+  </distributionManagement>
     <build>
         <plugins>
             <plugin>
