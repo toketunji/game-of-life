@@ -14,7 +14,7 @@
     <properties>
         <jetty.port>9090</jetty.port>
         <jetty.stop.port>9999</jetty.stop.port>
-        <docker.registry>docker-registry.alooma.com:8081/</docker.registry>
+        <docker.registry>40.113.144.171:8081/</docker.registry>
     </properties>
 
     <build>
