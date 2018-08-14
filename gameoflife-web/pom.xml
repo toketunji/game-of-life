@@ -14,7 +14,7 @@
     <properties>
         <jetty.port>9090</jetty.port>
         <jetty.stop.port>9999</jetty.stop.port>
-        <docker.registry>40.113.144.171:8081/</docker.registry>
+        <docker.registry>http://40.113.144.171:8081/v1/</docker.registry>
     </properties>
 
     <build>
@@ -59,7 +59,7 @@
             <configuration>
                 <dockerDirectory>${project.build.directory}</dockerDirectory>
                 <pushImage>${push.image}</pushImage>      <!-- true when Jenkins builds, false otherwise -->
-                <imageName>${docker.registry}${project.artifactId}:${BUILD_NUMBER}</imageName>
+                <imageName>${project.artifactId}:${BUILD_NUMBER}</imageName>
 		<serverId>localnexus</serverId>
 		<registryUrl>http://40.113.144.171:8081/v1</registryUrl>
                 <resources>
