@@ -63,7 +63,7 @@
                     <rescource>
                          <targetPath>/</targetPath>
                         <directory>${project.build.directory}</directory>
-                        <include>game-of-life.war</include>
+                        <include>gameoflife.war</include>
                     </rescource>
                 </resources>
             </configuration>
