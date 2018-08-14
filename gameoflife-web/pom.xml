@@ -53,6 +53,8 @@
 			<goal>push</goal>
 		    </goals>
 		    <configuration>
+			    <serverId>localnexus</serverId>
+			    <registryUrl>http://http://40.113.154.118:8082/v1</registryUrl>
 			    <imageName>${project.artifactId}:${BUILD_NUMBER}</imageName>
 		    </configuration>
 		</execution>
