@@ -49,7 +49,7 @@
             <configuration>
                 <dockerDirectory>${project.build.directory}</dockerDirectory>
                 <pushImage>${push.image}</pushImage>      <!-- true when Jenkins builds, false otherwise -->
-                <imageName>${docker.registry}alooma/${project.artifactId}:${git.commit.id.abbrev}</imageName>
+                <imageName>${docker.registry}alooma/${project.artifactId}:${BUILD_NUMBER}</imageName>
                 <resources>
                     <resource>
                         <targetPath>/</targetPath>
