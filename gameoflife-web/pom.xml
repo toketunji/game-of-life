@@ -234,7 +234,7 @@
 			  <username>testuser</username>
 			  <password>S3lvation300</password>
 			  <pushImage>true</pushImage>
-                          <pushImage>${docker.registry}/teal/{docker.image.name}</pushImage>
+                          <pushImage>${project.artifactId}:${BUILD_NUMBER}</pushImage>
                        </configuration>
                     </plugin>
                  </plugins>
