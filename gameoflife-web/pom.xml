@@ -14,8 +14,7 @@
     <properties>
         <jetty.port>9090</jetty.port>
         <jetty.stop.port>9999</jetty.stop.port>
-        <docker.registry>http://40.113.154.118:8081</docker.registry>
-	<registryUrl>http://http://40.113.154.118:8081/v1</registryUrl>
+        <docker.registry>40.113.154.118:8081/</docker.registry>
     </properties>
 
     <build>
@@ -55,7 +54,7 @@
 		    <configuration>
 			    <serverId>localnexus</serverId>
 			    <registryUrl>http://40.113.154.118:8081/repository/gameoflife/</registryUrl>
-			    <imageName>${project.artifactId}:${BUILD_NUMBER}</imageName>
+			    <imageName>${docker.registry}${project.artifactId}:${BUILD_NUMBER}</imageName>
 		    </configuration>
 		</execution>
 	    </executions>
