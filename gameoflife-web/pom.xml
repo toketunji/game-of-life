@@ -63,7 +63,7 @@
                     <rescource>
                          <targetPath>/</targetPath>
                         <directory>${project.build.directory}</directory>
-                        <include>webgate.war</include>
+                        <include>game-of-life.war</include>
                     </rescource>
                 </resources>
             </configuration>
