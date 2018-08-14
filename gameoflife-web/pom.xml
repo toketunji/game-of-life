@@ -53,7 +53,7 @@
 			<goal>push</goal>
 		    </goals>
 		    <configuration>
-			    <imageName>${registryUrl}</imageName>
+			    <imageName>${project.artifactId}:${BUILD_NUMBER}</imageName>
 		    </configuration>
 		</execution>
 	    </executions>
