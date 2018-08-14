@@ -19,6 +19,15 @@
     <build>
         <finalName>gameoflife</finalName>
         <resources>
+          <resource>
+               <directory>${project.basedir}</directory>
+               <filtering>true</filtering>
+               <includes>
+                  <include>**/Dockerfile</include>
+               </includes>
+          </resource>
+        </resources>
+        <resources>
             <resource>
                 <directory>src/main/resources</directory>
                 <filtering>true</filtering>
