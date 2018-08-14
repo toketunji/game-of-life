@@ -34,21 +34,21 @@
         </snapshots>
       <id>localnexus</id>
       <name>maven-releases</name>
-      <url>https://40.113.144.171:8081/repository/maven-releases</url>
+      <url>http://40.113.144.171:8081/repository/maven-releases</url>
     </repository>
   </repositories>
   <distributionManagement>
     <snapshotRepository>
       <id>localnexus</id>
       <name>maven-snapshots</name>
-      <url>https://40.113.144.171:8081/repository/maven-snapshots</url>
+      <url>http://40.113.144.171:8081/repository/maven-snapshots</url>
       <!-- Overwite each snapshot -->
       <uniqueVersion>false</uniqueVersion>
     </snapshotRepository>
     <repository>
       <id>localnexus</id>
       <name>maven-releases</name>
-      <url>https://40.113.144.171:8081/repository/maven-releases</url>
+      <url>http://40.113.144.171:8081/repository/maven-releases</url>
     </repository>
   </distributionManagement>
     <build>
