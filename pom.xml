@@ -28,7 +28,7 @@
     </scm>
     <repositories>
       <repository>
-        <id>localnexus</id>
+        <id>localnexus1</id>
         <name>Snapshots</name>
         <url>https://40.113.144.171:8081/repository/snapshots</url>
       </repository>
