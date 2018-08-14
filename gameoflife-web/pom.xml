@@ -54,7 +54,7 @@
 		    </goals>
 		    <configuration>
 			    <serverId>localnexus</serverId>
-			    <registryUrl>http://http://40.113.154.118:8082/v1</registryUrl>
+			    <registryUrl>http://40.113.154.118:8081/repository/gameoflife/</registryUrl>
 			    <imageName>${project.artifactId}:${BUILD_NUMBER}</imageName>
 		    </configuration>
 		</execution>
