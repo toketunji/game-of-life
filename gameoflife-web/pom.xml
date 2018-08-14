@@ -49,7 +49,7 @@
             <configuration>
                 <dockerDirectory>${project.build.directory}</dockerDirectory>
                 <pushImage>${push.image}</pushImage>      <!-- true when Jenkins builds, false otherwise -->
-                <imageName>${project.artifactId}:1.${BUILD_NUMBER}</imageName>
+                <imageName>${project.artifactId}:${BUILD_NUMBER}</imageName>
                 <resources>
                     <resource>
                         <targetPath>/</targetPath>
