@@ -14,7 +14,7 @@
     <properties>
         <jetty.port>9090</jetty.port>
         <jetty.stop.port>9999</jetty.stop.port>
-        <docker.registry>40.113.154.118:8081/repository/docker-releases/</docker.registry>
+        <docker.registry>http://40.113.154.118:8081/repository/gameoflife/</docker.registry>
     </properties>
 
     <build>
