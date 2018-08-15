@@ -39,7 +39,7 @@
             <plugin>
               <groupId>com.spotify</groupId>
               <artifactId>docker-maven-plugin</artifactId>
-              <version>0.4.13</version>
+              <version>0.4.14</version>
               <executions>
                 <execution>
                     <phase>package</phase>
@@ -253,7 +253,7 @@
 		    <plugin>
                        <groupId>com.spotify</groupId>
                        <artifactId>docker-maven-plugin</artifactId>
-		       <version>0.4.13</version>
+		       <version>0.4.14</version>
 		       <configuration>
 			  <repository>40.113.154.118:8081/gameoflife</repository>
 			  <serverId>localnexus</serverId>
