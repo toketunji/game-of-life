@@ -63,8 +63,8 @@
 		        </imageTags>
 		    </configuration>
 	        </execution>
-	    </executions>
-                <resources>
+	      </executions>
+              <resources>
                     <resource>
                         <targetPath>/</targetPath>
                         <directory>${project.basedir}</directory>
@@ -79,7 +79,7 @@
                         <directory>${project.build.directory}</directory>
                         <include>gameoflife.war</include>
                     </resource>
-                </resources>
+            </resources>
             </plugin>
             <plugin>
                <groupId>org.eclipse.jetty</groupId>
