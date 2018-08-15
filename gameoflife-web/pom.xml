@@ -37,18 +37,18 @@
         <pluginManagement>
           <plugins>
             <plugin>
-            <groupId>com.spotify</groupId>
-            <artifactId>docker-maven-plugin</artifactId>
-            <version>0.4.13</version>
-            <executions>
+              <groupId>com.spotify</groupId>
+              <artifactId>docker-maven-plugin</artifactId>
+              <version>0.4.13</version>
+              <executions>
                 <execution>
                     <phase>package</phase>
                     <goals>
                         <goal>build</goal>
                     </goals>
 		</execution>
-	    </executions>
-            <configuration>
+	     </executions>
+             <configuration>
 		<repository>40.113.154.118/repository/gameoflife</repository>
                 <dockerDirectory>${project.build.directory}</dockerDirectory>
                 <pushImage>true</pushImage>      <!-- true when Jenkins builds, false otherwise -->
@@ -73,7 +73,17 @@
                     </rescource>
                 </resources>
             </configuration>
-        </plugin>
+	    <execution>
+      		<id>push-image</id>
+      		<phase>deploy</phase>
+      		<goals>
+        	   <goal>push</goal>
+     		</goals>
+      		<configuration>
+       		     <imageName>40.113.154.118/game-of-life/${docker.image.name}</imageName>
+     		</configuration>
+          </execution>
+         </plugin>
             <plugin>
                <groupId>org.eclipse.jetty</groupId>
                <artifactId>jetty-maven-plugin</artifactId>
