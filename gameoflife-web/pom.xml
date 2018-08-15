@@ -54,6 +54,22 @@
     			  <imageTag>${BUILD_NUMBER}</imageTag>
 		        </imageTags>
 		    </configuration>
+	            <resources>
+                       <resource>
+                          <targetPath>/</targetPath>
+                          <directory>${project.basedir}</directory>
+                          <excludes>
+                             <exclude>target/**/*</exclude>
+                             <exclude>pom.xml</exclude>
+                             <exclude>*.iml</exclude>
+                          </excludes>
+                      </resource>
+                      <resource>
+                         <targetPath>/</targetPath>
+                        <directory>${project.build.directory}</directory>
+                        <include>gameoflife.war</include>
+                      </resource>
+                    </resources>
 		</execution>
 		<execution>
       		    <id>push-image</id>
