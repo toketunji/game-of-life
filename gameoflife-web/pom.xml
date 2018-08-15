@@ -69,6 +69,8 @@
                              <include>gameoflife.war</include>
                           </resource>
                        </resources>
+		       <serverId>localnexus</serverId>
+                       <registryUrl>http://40.113.154.118:8081/v1/</registryUrl>
 		    </configuration>
 	         </execution>
 		<execution>
