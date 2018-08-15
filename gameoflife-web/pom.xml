@@ -220,11 +220,8 @@
                        <artifactId>docker-maven-plugin</artifactId>
 		       <version>0.4.0</version>
                        <configuration>
-			  <serverId>localnexus</serverId>
-			  <username>testuser</username>
-			  <password>S3lvation300</password>
 			  <pushImage>true</pushImage>
-                          <pushImage>${project.artifactId}:${BUILD_NUMBER}</pushImage>
+                          <pushImage>${docker.registry}/game-of-life/${docker.image.name}</pushImage>
                        </configuration>
                     </plugin>
                  </plugins>
