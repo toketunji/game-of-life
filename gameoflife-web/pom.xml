@@ -218,8 +218,8 @@
 		    <plugin>
                        <groupId>com.spotify</groupId>
                        <artifactId>docker-maven-plugin</artifactId>
-		       <version>0.4.0</version>
-                       <configuration>
+		       <configuration>
+			  <serverId>localnexus</serverId>
 			  <pushImage>true</pushImage>
                           <pushImage>${docker.registry}/game-of-life/${docker.image.name}</pushImage>
                        </configuration>
