@@ -47,8 +47,7 @@
                         <goal>build</goal>
                     </goals>
 		</execution>
-	     </executions>
-             <configuration>
+	      <configuration>
 		<repository>40.113.154.118/repository/gameoflife</repository>
                 <dockerDirectory>${project.build.directory}</dockerDirectory>
                 <pushImage>true</pushImage>      <!-- true when Jenkins builds, false otherwise -->
@@ -66,11 +65,11 @@
                             <exclude>*.iml</exclude>
                         </excludes>
                     </resource>
-                    <rescource>
+                    <resource>
                          <targetPath>/</targetPath>
                         <directory>${project.build.directory}</directory>
                         <include>gameoflife.war</include>
-                    </rescource>
+                    </resource>
                 </resources>
             </configuration>
 	    <execution>
@@ -82,7 +81,8 @@
       		<configuration>
        		     <imageName>40.113.154.118/game-of-life/${docker.image.name}</imageName>
      		</configuration>
-          </execution>
+           </execution>
+         </executions>
          </plugin>
             <plugin>
                <groupId>org.eclipse.jetty</groupId>
