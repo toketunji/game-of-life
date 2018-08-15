@@ -80,6 +80,7 @@
       		    <configuration>
 		        <repository>40.113.154.118/repository/gameoflife</repository>
                         <dockerDirectory>${project.build.directory}</dockerDirectory>
+			<serverId>localnexus</serverId>
                         <pushImage>true</pushImage>      <!-- true when Jenkins builds, false otherwise -->
                         <imageName>${docker.registry}/game-of-life/${docker.image.name}</imageName>
 		        <imageTags>
