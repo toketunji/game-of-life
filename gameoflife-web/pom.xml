@@ -14,7 +14,7 @@
     <properties>
         <jetty.port>9090</jetty.port>
         <jetty.stop.port>9999</jetty.stop.port>
-        <docker.registry>40.113.154.118:8081/</docker.registry>
+        <docker.registry>40.113.154.118:8081/repository/</docker.registry>
     </properties>
 
     <build>
