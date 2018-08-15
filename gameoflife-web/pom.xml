@@ -14,7 +14,7 @@
     <properties>
         <jetty.port>9090</jetty.port>
         <jetty.stop.port>9999</jetty.stop.port>
-        <docker.registry>40.113.154.118:8081/v1/repositories/gameoflife/</docker.registry>
+        <docker.registry>40.113.154.118:8081</docker.registry>
     </properties>
 
     <build>
@@ -44,6 +44,12 @@
                     <goals>
                         <goal>build</goal>
                     </goals>
+		    <configuration>
+                            <dockerDirectory>${project.basedir}</dockerDirectory>
+			    <serverId>localnexus</serverId>
+			    <pushImage>true</pushImage>
+			    <imageName>${docker.registry}${project.artifactId}:${BUILD_NUMBER}</imageName>
+		    </configuration>
                 </execution>
 		<execution>
 		    <id>push-image</id>
@@ -52,10 +58,9 @@
 			<goal>push</goal>
 		    </goals>
 		    <configuration>
-                            <dockerDirectory>${project.build.directory}</dockerDirectory>
+                            <dockerDirectory>${project.basedir}</dockerDirectory>
 			    <serverId>localnexus</serverId>
 			    <pushImage>true</pushImage>
-			    <registryUrl>http://40.113.154.118:8081/repository/gameoflife/</registryUrl>
 			    <imageName>${docker.registry}${project.artifactId}:${BUILD_NUMBER}</imageName>
 		    </configuration>
 		</execution>
