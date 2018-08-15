@@ -14,7 +14,7 @@
     <properties>
         <jetty.port>9090</jetty.port>
         <jetty.stop.port>9999</jetty.stop.port>
-        <docker.registry>40.113.154.118:8081/repository</docker.registry>
+        <docker.registry>40.113.154.118:8081</docker.registry>
 	<push.image>false</push.image>
 	<docker.image.name>game-of-life</docker.image.name>
     </properties>
@@ -70,7 +70,7 @@
                           </resource>
                        </resources>
 		       <serverId>localnexus</serverId>
-                       <registryUrl>http://40.113.154.118:8081/v1/</registryUrl>
+                       <registryUrl>http://40.113.154.118:8082/v1</registryUrl>
 		    </configuration>
 	         </execution>
 		<execution>
@@ -80,7 +80,7 @@
         	        <goal>push</goal>
      		    </goals>
       		    <configuration>
-		        <repository>40.113.154.118:8081/repository/gameoflife</repository>
+		        <repository>40.113.154.118:8081/gameoflife</repository>
                         <dockerDirectory>${project.build.directory}</dockerDirectory>
 			<serverId>localnexus</serverId>
                         <pushImage>true</pushImage>      <!-- true when Jenkins builds, false otherwise -->
@@ -167,7 +167,7 @@
   		</executions>
    		<configuration>
       		     <serverId>localnexus</serverId>
-      		     <nexusUrl>http://40.113.154.118:8081/</nexusUrl>
+      		     <nexusUrl>http://40.113.154.118:8081</nexusUrl>
       		     <skipStaging>true</skipStaging>
    		</configuration>
 	    </plugin>
@@ -255,7 +255,7 @@
                        <artifactId>docker-maven-plugin</artifactId>
 		       <version>0.4.13</version>
 		       <configuration>
-			  <repository>40.113.154.118:8081/repository/gameoflife</repository>
+			  <repository>40.113.154.118:8081/gameoflife</repository>
 			  <serverId>localnexus</serverId>
 			  <pushImage>true</pushImage>
                           <pushImage>${docker.registry}/${docker.image.name}</pushImage>
