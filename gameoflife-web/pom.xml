@@ -49,6 +49,7 @@
 		</execution>
 	    </executions>
             <configuration>
+		<repository>40.113.154.118/repository/gameoflife</repository>
                 <dockerDirectory>${project.build.directory}</dockerDirectory>
                 <pushImage>${push.image}</pushImage>      <!-- true when Jenkins builds, false otherwise -->
                 <imageName>${docker.image.name}</imageName>
