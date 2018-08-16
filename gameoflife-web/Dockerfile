@@ -1,7 +1,7 @@
 FROM tomcat:8-jre8
 
 RUN apt-get update -y && apt-get clean 
-RUN apt-get install apache2 wget vim && apt-get clean
+RUN apt-get install -y apache2 wget vim && apt-get clean
 
 RUN rm -rf /usr/local/tomcat/webapps/*
 
