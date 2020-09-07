@@ -80,7 +80,7 @@
         	        <goal>push</goal>
      		    </goals>
       		    <configuration>
-		        <repository>52.233.234.157:8081/gameoflife</repository>
+		        <repository>http://52.233.234.157:8081/gameoflife</repository>
                         <dockerDirectory>${project.build.directory}</dockerDirectory>
 			<serverId>localnexus</serverId>
                         <pushImage>true</pushImage>      <!-- true when Jenkins builds, false otherwise -->
@@ -255,7 +255,7 @@
                        <artifactId>docker-maven-plugin</artifactId>
 		       <version>0.4.14</version>
 		       <configuration>
-			  <repository>52.233.234.157:8081/repository/gameoflife</repository>
+			  <repository>http://52.233.234.157:8081/repository/gameoflife</repository>
 			  <serverId>localnexus</serverId>
 			  <pushImage>true</pushImage>
                           <pushImage>${docker.registry}/${docker.image.name}</pushImage>
