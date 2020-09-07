@@ -42,14 +42,14 @@
     <snapshotRepository>
       <id>localnexus</id>
       <name>maven-snapshots</name>
-      <url>http://40.113.154.118:8081/repository/maven-snapshots</url>
+      <url>http://52.233.234.157:8081/repository/maven-snapshots</url>
       <!-- Overwite each snapshot -->
       <uniqueVersion>false</uniqueVersion>
     </snapshotRepository>
     <repository>
       <id>localnexus</id>
       <name>maven-releases</name>
-      <url>http://40.113.154.118:8081/repository/maven-releases</url>
+      <url>http://52.233.234.157:8081/repository/maven-releases</url>
     </repository>
   </distributionManagement>
     <build>
