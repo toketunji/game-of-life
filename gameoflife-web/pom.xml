@@ -167,7 +167,7 @@
   		</executions>
    		<configuration>
       		     <serverId>localnexus</serverId>
-      		     <nexusUrl>http://52.233.234.157:8081</nexusUrl>
+      		     <nexusUrl>http://52.233.234.157:8081/</nexusUrl>
       		     <skipStaging>true</skipStaging>
    		</configuration>
 	    </plugin>
