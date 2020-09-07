@@ -35,7 +35,7 @@
         </snapshots>
       <id>localnexus</id>
       <name>maven-releases</name>
-      <url>http://40.113.154.118:8081/repository/maven-releases</url>
+      <url>http://52.233.234.157:8081/repository/maven-releases</url>
     </repository>
   </repositories>
   <distributionManagement>
