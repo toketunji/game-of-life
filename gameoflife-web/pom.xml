@@ -39,7 +39,7 @@
             <plugin>
               <groupId>com.spotify</groupId>
               <artifactId>dockerfile-maven-plugin</artifactId>
-              <version>v1.4.13</version>
+              <version>1.4.13</version>
               <executions>
                 <execution>
                     <phase>package</phase>
@@ -253,7 +253,7 @@
 		    <plugin>
                        <groupId>com.spotify</groupId>
                        <artifactId>dockerfile-maven-plugin</artifactId>
-		       <version>v1.4.13</version>
+		       <version>1.4.13</version>
 		       <configuration>
 			  <repository>http://52.233.234.157:8081/repository/docker-private/</repository>
 			  <serverId>localnexus</serverId>
