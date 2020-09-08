@@ -255,7 +255,7 @@
                        <artifactId>dockerfile-maven-plugin</artifactId>
 		       <version>1.4.13</version>
 		       <configuration>
-			  <repository>52.233.234.157:8081/repository/docker-private/</repository>
+			  <repository>52.233.234.157:8081/repository/docker-private</repository>
 			  <serverId>localnexus</serverId>
 			  <pushImage>true</pushImage>
                           <pushImage>${docker.registry}/${docker.image.name}</pushImage>
