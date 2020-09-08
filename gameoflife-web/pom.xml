@@ -14,7 +14,7 @@
     <properties>
         <jetty.port>9090</jetty.port>
         <jetty.stop.port>9999</jetty.stop.port>
-        <docker.registry>52.233.234.157</docker.registry>
+        <docker.registry>52.233.234.157:8083</docker.registry>
 	<push.image>false</push.image>
 	<docker.image.name>game-of-life</docker.image.name>
     </properties>
@@ -70,7 +70,7 @@
                           </resource>
                        </resources>
 		       <serverId>localnexus</serverId>
-                       <registryUrl>http://52.233.234.157:8082/v1</registryUrl>
+                       <registryUrl>http://52.233.234.157:8083/v2</registryUrl>
 		    </configuration>
 	         </execution>
 		<execution>
@@ -80,7 +80,7 @@
         	        <goal>push</goal>
      		    </goals>
       		    <configuration>
-		        <repository>http://52.233.234.157:8081/gameoflife</repository>
+		        <repository>http://52.233.234.157:8083/docker-private</repository>
                         <dockerDirectory>${project.build.directory}</dockerDirectory>
 			<serverId>localnexus</serverId>
                         <pushImage>true</pushImage>      <!-- true when Jenkins builds, false otherwise -->
