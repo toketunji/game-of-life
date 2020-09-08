@@ -221,7 +221,6 @@
                 </plugins>
             </build>
         </profile>
-	    <!--
         <profile>
             <id>acceptance</id>
             <build>
@@ -236,7 +235,6 @@
                 </plugins>
             </build>
         </profile>
-        -->
         <profile>
               <id>docker-local</id>
  	      <build>
