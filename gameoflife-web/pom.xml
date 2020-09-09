@@ -15,7 +15,7 @@
         <jetty.port>9090</jetty.port>
         <jetty.stop.port>9999</jetty.stop.port>
         <docker.registry>52.233.234.157:8083</docker.registry>
-	<push.image>true</push.image>
+	<push.image>false</push.image>
 	<docker.image.name>game-of-life</docker.image.name>
     </properties>
 
@@ -255,7 +255,7 @@
                        <artifactId>dockerfile-maven-plugin</artifactId>
 		       <version>1.4.13</version>
 		       <configuration>
-			  <repository>52.233.234.157:8081/repository/docker-private</repository>
+			  <repository>52.233.234.157:8081/repository/docker-private/</repository>
 			  <serverId>localnexus</serverId>
 			  <pushImage>true</pushImage>
                           <pushImage>${docker.registry}/${docker.image.name}</pushImage>
